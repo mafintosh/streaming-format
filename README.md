@@ -6,6 +6,8 @@ Simple streaming formatter
 npm install streaming-format
 ```
 
+[![build status](http://img.shields.io/travis/mafintosh/streaming-format.svg?style=flat)](http://travis-ci.org/mafintosh/streaming-format)
+
 ## Usage
 
 Assuming you have a stream that contains handlebars format values like
