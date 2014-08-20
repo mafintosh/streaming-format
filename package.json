@@ -1,0 +1,20 @@
+{
+  "name": "streaming-format",
+  "version": "0.0.0",
+  "description": "Simple streaming formatter",
+  "main": "index.js",
+  "dependencies": {
+    "buffer-indexof": "^0.0.1",
+    "through2": "^0.6.1"
+  },
+  "devDependencies": {
+    "choppa": "^1.0.1",
+    "concat-stream": "^1.4.6",
+    "tape": "^2.14.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
