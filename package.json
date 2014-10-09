@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "buffer-indexof": "^0.0.1",
+    "minimist": "^1.1.0",
     "through2": "^0.6.1"
   },
   "devDependencies": {
@@ -15,6 +16,25 @@
   "scripts": {
     "test": "tape test.js"
   },
-  "author": "",
-  "license": "ISC"
+  "bin": {
+    "format": "./bin.js"
+  },
+  "author": "Mathias Buus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/streaming-format.git"
+  },
+  "keywords": [
+    "stream",
+    "streaming",
+    "format",
+    "template",
+    "handlebars",
+    "moustache"
+  ],
+  "bugs": {
+    "url": "https://github.com/mafintosh/streaming-format/issues"
+  },
+  "homepage": "https://github.com/mafintosh/streaming-format"
 }
