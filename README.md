@@ -50,6 +50,15 @@ HELLO world
 }
 ```
 
+## Command line tool
+
+There is also a command line tool available
+
+```
+npm install -g streaming-format
+echo 'hello {{hello}}' | format --hello world # prints hello world
+```
+
 ## License
 
 MIT
