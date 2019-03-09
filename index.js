@@ -19,8 +19,8 @@ var createStream = function(opts, fmt) {
   if (typeof opts === 'function') return createStream(null, opts)
   if (!opts) opts = {}
 
-  var start = new Buffer(opts.start || '{{')
-  var end = new Buffer(opts.end || '}}')
+  var start = Buffer.from(opts.start || '{{')
+  var end = Buffer.from(opts.end || '}}')
 
   var min = start.length+end.length
   var first = start[0]

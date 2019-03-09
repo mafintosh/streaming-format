@@ -4,14 +4,14 @@
   "description": "Simple streaming formatter",
   "main": "index.js",
   "dependencies": {
-    "buffer-indexof": "^0.0.1",
-    "minimist": "^1.1.0",
-    "through2": "^0.6.1"
+    "buffer-indexof": "^1.1.1",
+    "minimist": "^1.2.0",
+    "through2": "^3.0.1"
   },
   "devDependencies": {
-    "choppa": "^1.0.1",
-    "concat-stream": "^1.4.6",
-    "tape": "^2.14.0"
+    "choppa": "^1.0.2",
+    "concat-stream": "^2.0.0",
+    "tape": "^4.10.1"
   },
   "scripts": {
     "test": "tape test.js"
