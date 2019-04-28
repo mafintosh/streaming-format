@@ -51,7 +51,17 @@ var createStream = function(opts, fmt) {
 
       this.push(data.slice(0, si))
 
+      while (true) {
+        var rem = data.slice(si + 1, ei)
+        var idx = indexOf(rem, start)
+        if (idx === -1) break
+        idx += si + 1
+        this.push(data.slice(si, idx))
+        si = idx
+      }
+
       var name = data.slice(si+start.length, ei)
+
       var val = fmt(name.toString())
 
       if (val) this.push(val)

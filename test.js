@@ -49,6 +49,22 @@ tape('formats twice', function(t) {
   s.end()
 })
 
+tape('format in format twice', function(t) {
+  var s = fmt(function(name) {
+    return name.toUpperCase()
+  })
+
+  s.pipe(concat(function(data) {
+    t.same(data.toString(), '{HELLO} world {HELLO} world')
+    t.end()
+  }))
+
+  s.write('{{{hello}}} world')
+  s.write(' ')
+  s.write('{{{hello}}} world')
+  s.end()
+})
+
 tape('formats when chunked', function(t) {
   var c = choppa()
   var s = fmt(function(name) {
